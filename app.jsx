@@ -9,10 +9,6 @@ const Container = () => {
     return (
       <div id="container">
         <HomePage/>
-        <AboutUs/>
-        <ElectionNews />
-        <Rules/>
-        <SignUp/>
       </div>
     );
   };
