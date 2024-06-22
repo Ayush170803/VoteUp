@@ -2957,28 +2957,30 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
-var _homepage = require("./components/Homepage");
+var _homepage = require("./components/Homepage/Homepage");
 var _homepageDefault = parcelHelpers.interopDefault(_homepage);
+var _electionNews = require("./components/News/ElectionNews");
+var _electionNewsDefault = parcelHelpers.interopDefault(_electionNews);
 var _appCss = require("./App.css");
 let root = (0, _reactDomDefault.default).createRoot(document.querySelector("#root"));
 const Container = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _electionNewsDefault.default), {}, void 0, false, {
             fileName: "app.jsx",
-            lineNumber: 11,
+            lineNumber: 12,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "app.jsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 7
     }, undefined);
 };
 _c = Container;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {}, void 0, false, {
     fileName: "app.jsx",
-    lineNumber: 16,
+    lineNumber: 17,
     columnNumber: 15
 }, undefined));
 var _c;
@@ -2989,7 +2991,7 @@ $RefreshReg$(_c, "Container");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Homepage":"gcpxw","./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Homepage/Homepage":"cmUkF","./components/News/ElectionNews":"8MOTR","./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27211,11 +27213,11 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gcpxw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8352 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"cmUkF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8b9c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8352.prelude(module);
+$parcel$ReactRefreshHelpers$8b9c.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -27228,6 +27230,12 @@ var _gsap = require("gsap");
 var _gsapDefault = parcelHelpers.interopDefault(_gsap);
 var _scrollTrigger = require("gsap/ScrollTrigger");
 var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
+var _navBar = require("./NavBar");
+var _navBarDefault = parcelHelpers.interopDefault(_navBar);
+var _homepageBody = require("./HomepageBody");
+var _homepageBodyDefault = parcelHelpers.interopDefault(_homepageBody);
+var _footer = require("./Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _s = $RefreshSig$();
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 function App() {
@@ -27275,210 +27283,36 @@ function App() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                     className: "section1",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex items-center justify-center gap-12",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            src: "https://i.pinimg.com/564x/cf/08/06/cf0806ddc86a53db9557eccaf28f5951.jpg",
-                                            alt: "Logo",
-                                            className: "logo"
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 54,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                            className: "voteup-text",
-                                            children: "VoteUp"
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 55,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/Homepage.jsx",
-                                    lineNumber: 53,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    id: "part2",
-                                    className: "flex items-center justify-center gap-12",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "nav-button about-us font-bold text-lg",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                children: "About Us"
-                                            }, void 0, false, {
-                                                fileName: "components/Homepage.jsx",
-                                                lineNumber: 58,
-                                                columnNumber: 87
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 58,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "nav-button services font-bold text-lg",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                children: "ELECTION NEWS"
-                                            }, void 0, false, {
-                                                fileName: "components/Homepage.jsx",
-                                                lineNumber: 59,
-                                                columnNumber: 87
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 59,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "nav-button contact-us font-bold text-lg",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                children: "RULES & REGULATIONS"
-                                            }, void 0, false, {
-                                                fileName: "components/Homepage.jsx",
-                                                lineNumber: 60,
-                                                columnNumber: 89
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 60,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "login-button border-2 border-blue-900 text-lg font-bold",
-                                            children: "Sign Up"
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 61,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/Homepage.jsx",
-                                    lineNumber: 57,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Homepage.jsx",
-                            lineNumber: 52,
-                            columnNumber: 21
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
+                            fileName: "components/Homepage/Homepage.jsx",
+                            lineNumber: 55,
+                            columnNumber: 17
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "center",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    id: "center-part1",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                            children: [
-                                                "Your perfect site to visit during ",
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "orange",
-                                                    children: "ele"
-                                                }, void 0, false, {
-                                                    fileName: "components/Homepage.jsx",
-                                                    lineNumber: 66,
-                                                    columnNumber: 67
-                                                }, this),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "blue",
-                                                    children: "cti"
-                                                }, void 0, false, {
-                                                    fileName: "components/Homepage.jsx",
-                                                    lineNumber: 66,
-                                                    columnNumber: 102
-                                                }, this),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "green",
-                                                    children: "ons"
-                                                }, void 0, false, {
-                                                    fileName: "components/Homepage.jsx",
-                                                    lineNumber: 66,
-                                                    columnNumber: 135
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 66,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: "Welcome to VoteUp, your digital platform for democratic engagement. At VoteUp, we empower voters above 18 years to voice their opinions on elections. You can share their perspectives on political parties you've voted for, contributing to real-time exit polls. Join us in shaping the future of democracy through informed and inclusive voting insights."
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 67,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "Register",
-                                            children: "REGISTER FOR EXIT POLL"
-                                        }, void 0, false, {
-                                            fileName: "components/Homepage.jsx",
-                                            lineNumber: 68,
-                                            columnNumber: 29
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/Homepage.jsx",
-                                    lineNumber: 65,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    id: "center-part2",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "i",
-                                        src: "https://i.pinimg.com/564x/37/33/98/3733985f86e1cbd0381f8b61b5c92cf9.jpg"
-                                    }, void 0, false, {
-                                        fileName: "components/Homepage.jsx",
-                                        lineNumber: 71,
-                                        columnNumber: 29
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "components/Homepage.jsx",
-                                    lineNumber: 70,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/Homepage.jsx",
-                            lineNumber: 64,
-                            columnNumber: 21
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageBodyDefault.default), {}, void 0, false, {
+                            fileName: "components/Homepage/Homepage.jsx",
+                            lineNumber: 56,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "components/Homepage.jsx",
-                    lineNumber: 51,
+                    fileName: "components/Homepage/Homepage.jsx",
+                    lineNumber: 54,
                     columnNumber: 17
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
-                    className: "footer",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "\xa9 2024 VoteUp. All rights reserved."
-                    }, void 0, false, {
-                        fileName: "components/Homepage.jsx",
-                        lineNumber: 76,
-                        columnNumber: 21
-                    }, this)
-                }, void 0, false, {
-                    fileName: "components/Homepage.jsx",
-                    lineNumber: 75,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    fileName: "components/Homepage/Homepage.jsx",
+                    lineNumber: 58,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "components/Homepage.jsx",
-            lineNumber: 50,
+            fileName: "components/Homepage/Homepage.jsx",
+            lineNumber: 53,
             columnNumber: 13
         }, this)
     }, void 0, false, {
-        fileName: "components/Homepage.jsx",
-        lineNumber: 49,
+        fileName: "components/Homepage/Homepage.jsx",
+        lineNumber: 52,
         columnNumber: 9
     }, this);
 }
@@ -27488,12 +27322,12 @@ exports.default = App;
 var _c;
 $RefreshReg$(_c, "App");
 
-  $parcel$ReactRefreshHelpers$8352.postlude(module);
+  $parcel$ReactRefreshHelpers$8b9c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Homepage.css":"eJxSA","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eJxSA":[function() {},{}],"fPSuC":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Homepage.css":"5DnuC","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","./NavBar":"ciZ9Z","./HomepageBody":"6nGNa","./Footer":"fpMMC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5DnuC":[function() {},{}],"fPSuC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
@@ -33771,7 +33605,125 @@ Observer.getById = function(id) {
 };
 _getGSAP() && gsap.registerPlugin(Observer);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ciZ9Z":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fd75 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fd75.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const NavBar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex items-center justify-center gap-12",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: "https://i.pinimg.com/564x/cf/08/06/cf0806ddc86a53db9557eccaf28f5951.jpg",
+                        alt: "Logo",
+                        className: "logo"
+                    }, void 0, false, {
+                        fileName: "components/Homepage/NavBar.js",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "voteup-text",
+                        children: "VoteUp"
+                    }, void 0, false, {
+                        fileName: "components/Homepage/NavBar.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/Homepage/NavBar.js",
+                lineNumber: 6,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "part2",
+                className: "flex items-center justify-center gap-12",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "nav-button about-us font-bold text-lg",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            children: "About Us"
+                        }, void 0, false, {
+                            fileName: "components/Homepage/NavBar.js",
+                            lineNumber: 11,
+                            columnNumber: 67
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/Homepage/NavBar.js",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "nav-button services font-bold text-lg",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            children: "ELECTION NEWS"
+                        }, void 0, false, {
+                            fileName: "components/Homepage/NavBar.js",
+                            lineNumber: 12,
+                            columnNumber: 67
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/Homepage/NavBar.js",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "nav-button contact-us font-bold text-lg",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            children: "RULES & REGULATIONS"
+                        }, void 0, false, {
+                            fileName: "components/Homepage/NavBar.js",
+                            lineNumber: 13,
+                            columnNumber: 69
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/Homepage/NavBar.js",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "login-button border-2 border-blue-900 text-lg font-bold",
+                        children: "Sign Up"
+                    }, void 0, false, {
+                        fileName: "components/Homepage/NavBar.js",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/Homepage/NavBar.js",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Homepage/NavBar.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = NavBar;
+exports.default = NavBar;
+var _c;
+$RefreshReg$(_c, "NavBar");
+
+  $parcel$ReactRefreshHelpers$fd75.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -33909,6 +33861,243 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"7g3a6":[function() {},{}]},["9MYew","1xC6H","aSihg"], "aSihg", "parcelRequire2092")
+},{"7422ead32dcc1e6b":"786KC"}],"6nGNa":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$35c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$35c3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const HomepageBody = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "center",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "center-part1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: [
+                            "Your perfect site to visit during ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "orange",
+                                children: "ele"
+                            }, void 0, false, {
+                                fileName: "components/Homepage/HomepageBody.js",
+                                lineNumber: 6,
+                                columnNumber: 51
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "blue",
+                                children: "cti"
+                            }, void 0, false, {
+                                fileName: "components/Homepage/HomepageBody.js",
+                                lineNumber: 6,
+                                columnNumber: 86
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "green",
+                                children: "ons"
+                            }, void 0, false, {
+                                fileName: "components/Homepage/HomepageBody.js",
+                                lineNumber: 6,
+                                columnNumber: 119
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Homepage/HomepageBody.js",
+                        lineNumber: 6,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Welcome to VoteUp, your digital platform for democratic engagement. At VoteUp, we empower voters above 18 years to voice their opinions on elections. You can share their perspectives on political parties you've voted for, contributing to real-time exit polls. Join us in shaping the future of democracy through informed and inclusive voting insights."
+                    }, void 0, false, {
+                        fileName: "components/Homepage/HomepageBody.js",
+                        lineNumber: 7,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "Register",
+                        children: "REGISTER FOR EXIT POLL"
+                    }, void 0, false, {
+                        fileName: "components/Homepage/HomepageBody.js",
+                        lineNumber: 8,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/Homepage/HomepageBody.js",
+                lineNumber: 5,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "center-part2",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "i",
+                    src: "https://i.pinimg.com/564x/37/33/98/3733985f86e1cbd0381f8b61b5c92cf9.jpg"
+                }, void 0, false, {
+                    fileName: "components/Homepage/HomepageBody.js",
+                    lineNumber: 11,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/Homepage/HomepageBody.js",
+                lineNumber: 10,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Homepage/HomepageBody.js",
+        lineNumber: 4,
+        columnNumber: 9
+    }, undefined);
+};
+_c = HomepageBody;
+exports.default = HomepageBody;
+var _c;
+$RefreshReg$(_c, "HomepageBody");
+
+  $parcel$ReactRefreshHelpers$35c3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fpMMC":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e5bf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e5bf.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+            className: "footer",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "\xa9 2024 VoteUp. All rights reserved."
+            }, void 0, false, {
+                fileName: "components/Homepage/Footer.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined)
+        }, void 0, false, {
+            fileName: "components/Homepage/Footer.js",
+            lineNumber: 6,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false);
+};
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$e5bf.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8MOTR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$30b3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$30b3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _navBar = require("../Homepage/NavBar");
+var _navBarDefault = parcelHelpers.interopDefault(_navBar);
+var _footer = require("../Homepage/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _header = require("./Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+const ElectionNews = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
+                fileName: "components/News/ElectionNews.js",
+                lineNumber: 8,
+                columnNumber: 6
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "components/News/ElectionNews.js",
+                lineNumber: 9,
+                columnNumber: 6
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "components/News/ElectionNews.js",
+                lineNumber: 10,
+                columnNumber: 6
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c = ElectionNews;
+exports.default = ElectionNews;
+var _c;
+$RefreshReg$(_c, "ElectionNews");
+
+  $parcel$ReactRefreshHelpers$30b3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../Homepage/NavBar":"ciZ9Z","../Homepage/Footer":"fpMMC","./Header":"jpevp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jpevp":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d5c9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d5c9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _headerCss = require("./Header.css");
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "heading",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Latest News"
+            }, void 0, false, {
+                fileName: "components/News/Header.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "",
+                children: "See all"
+            }, void 0, false, {
+                fileName: "components/News/Header.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/News/Header.js",
+        lineNumber: 5,
+        columnNumber: 13
+    }, undefined);
+};
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$d5c9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./Header.css":"elHHS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"elHHS":[function() {},{}],"7g3a6":[function() {},{}]},["9MYew","1xC6H","aSihg"], "aSihg", "parcelRequire2092")
 
 //# sourceMappingURL=index.f54bfa54.js.map
