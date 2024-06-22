@@ -63,6 +63,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    text-decoration: none;
   }
   
   .logo {
@@ -77,6 +78,7 @@
     background-color: transparent;
     font-weight: 600;
     border: 1px solid #000;
+    text-decoration: none;
   }
   
   .center {
@@ -271,4 +273,7 @@
     padding: 8px;
     background-color: #f0f0f0;
   }
-  
+  nav
+  {
+    text-decoration: none;
+  }

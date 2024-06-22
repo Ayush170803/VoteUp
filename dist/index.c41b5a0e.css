@@ -49,6 +49,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  text-decoration: none;
   display: flex;
 }
 
@@ -64,6 +65,7 @@ nav button {
   padding: 15px 28px;
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .center {
@@ -256,6 +258,10 @@ nav button.login-button {
   text-align: center;
   background-color: #f0f0f0;
   padding: 8px;
+}
+
+nav {
+  text-decoration: none;
 }
 
 #heading {
