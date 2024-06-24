@@ -2969,77 +2969,82 @@ var _error = require("./components/Error/Error");
 var _errorDefault = parcelHelpers.interopDefault(_error);
 var _reactRouterDom = require("react-router-dom");
 var _appCss = require("./App.css");
+var _container = require("./components/Container/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _signup = require("./components/Signup/Signup");
+var _signupDefault = parcelHelpers.interopDefault(_signup);
 let root = (0, _reactDomDefault.default).createRoot(document.querySelector("#root"));
-const Container = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
-            fileName: "app.jsx",
-            lineNumber: 16,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "app.jsx",
-        lineNumber: 15,
-        columnNumber: 7
-    }, undefined);
-};
-_c = Container;
 const ContainerRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Container, {}, void 0, false, {
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containerDefault.default), {}, void 0, false, {
             fileName: "app.jsx",
-            lineNumber: 24,
+            lineNumber: 18,
             columnNumber: 17
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "app.jsx",
-            lineNumber: 25,
+            lineNumber: 19,
             columnNumber: 22
-        }, undefined)
-    },
-    {
-        path: "/about",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
-            fileName: "app.jsx",
-            lineNumber: 29,
-            columnNumber: 17
-        }, undefined)
-    },
-    {
-        path: "/news",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _electionNewsDefault.default), {}, void 0, false, {
-            fileName: "app.jsx",
-            lineNumber: 33,
-            columnNumber: 17
-        }, undefined)
-    },
-    {
-        path: "/rules",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rulesDefault.default), {}, void 0, false, {
-            fileName: "app.jsx",
-            lineNumber: 37,
-            columnNumber: 17
-        }, undefined)
+        }, undefined),
+        children: [
+            {
+                path: "/",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageDefault.default), {}, void 0, false, {
+                    fileName: "app.jsx",
+                    lineNumber: 23,
+                    columnNumber: 21
+                }, undefined)
+            },
+            {
+                path: "/about",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                    fileName: "app.jsx",
+                    lineNumber: 27,
+                    columnNumber: 23
+                }, undefined)
+            },
+            {
+                path: "/electionnews",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _electionNewsDefault.default), {}, void 0, false, {
+                    fileName: "app.jsx",
+                    lineNumber: 31,
+                    columnNumber: 23
+                }, undefined)
+            },
+            {
+                path: "/rules",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rulesDefault.default), {}, void 0, false, {
+                    fileName: "app.jsx",
+                    lineNumber: 35,
+                    columnNumber: 23
+                }, undefined)
+            },
+            {
+                path: "/signup",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
+                    fileName: "app.jsx",
+                    lineNumber: 39,
+                    columnNumber: 23
+                }, undefined)
+            }
+        ]
     }
 ]);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
     router: ContainerRouter
 }, void 0, false, {
     fileName: "app.jsx",
-    lineNumber: 42,
+    lineNumber: 44,
     columnNumber: 15
 }, undefined));
-var _c;
-$RefreshReg$(_c, "Container");
 
   $parcel$ReactRefreshHelpers$59b8.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Homepage/Homepage":"cmUkF","./components/News/ElectionNews":"8MOTR","./components/Rules/Rules":"ftSG3","./components/About/About":"jQYiB","./components/Error/Error":"2NFbP","react-router-dom":"9xmpe","./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Homepage/Homepage":"cmUkF","./components/News/ElectionNews":"8MOTR","./components/Rules/Rules":"ftSG3","./components/About/About":"jQYiB","./components/Error/Error":"2NFbP","react-router-dom":"9xmpe","./App.css":"7g3a6","./components/Container/Container":"22iFL","./components/Signup/Signup":"71Zkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27278,93 +27283,32 @@ var _gsap = require("gsap");
 var _gsapDefault = parcelHelpers.interopDefault(_gsap);
 var _scrollTrigger = require("gsap/ScrollTrigger");
 var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
-var _navBar = require("./NavBar");
-var _navBarDefault = parcelHelpers.interopDefault(_navBar);
 var _homepageBody = require("./HomepageBody");
 var _homepageBodyDefault = parcelHelpers.interopDefault(_homepageBody);
-var _footer = require("./Footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _s = $RefreshSig$();
+var _navbarAnimate = require("../utils/NavbarAnimate");
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 function App() {
-    _s();
-    (0, _react.useEffect)(()=>{
-        const tl = (0, _gsapDefault.default).timeline();
-        tl.from("nav h1", {
-            y: -40,
-            opacity: 0,
-            delay: 0.2,
-            duration: 0.3
-        });
-        tl.from("nav h4, nav button", {
-            y: -40,
-            opacity: 0,
-            delay: 0.5,
-            duration: 0.4,
-            stagger: 0.1
-        });
-        tl.from("#center-part1 h1", {
-            x: -200,
-            opacity: 0,
-            duration: 0.6
-        });
-        tl.from("#center-part1 p", {
-            x: -100,
-            opacity: 0,
-            duration: 0.5
-        });
-        tl.from("#center-part1 button", {
-            opacity: 0,
-            duration: 0.4
-        });
-        tl.from("#center-part2 img", {
-            opacity: 0,
-            duration: 0.5,
-            x: 200
-        });
-    }, []);
+    (0, _navbarAnimate.NavbarAnimate)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "App",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "main",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                    className: "section1",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
-                            fileName: "components/Homepage/Homepage.jsx",
-                            lineNumber: 55,
-                            columnNumber: 17
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageBodyDefault.default), {}, void 0, false, {
-                            fileName: "components/Homepage/Homepage.jsx",
-                            lineNumber: 56,
-                            columnNumber: 17
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "components/Homepage/Homepage.jsx",
-                    lineNumber: 54,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                    fileName: "components/Homepage/Homepage.jsx",
-                    lineNumber: 58,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageBodyDefault.default), {}, void 0, false, {
+                fileName: "components/Homepage/Homepage.jsx",
+                lineNumber: 14,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
             fileName: "components/Homepage/Homepage.jsx",
-            lineNumber: 53,
+            lineNumber: 13,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "components/Homepage/Homepage.jsx",
-        lineNumber: 52,
+        lineNumber: 12,
         columnNumber: 9
     }, this);
 }
-_s(App, "OD7bBpZva5O2jO+Puf00hKivP7c=");
 _c = App;
 exports.default = App;
 var _c;
@@ -27375,7 +27319,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Homepage.css":"5DnuC","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","./NavBar":"ciZ9Z","./HomepageBody":"6nGNa","./Footer":"fpMMC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5DnuC":[function() {},{}],"fPSuC":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Homepage.css":"5DnuC","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","./HomepageBody":"6nGNa","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5DnuC":[function() {},{}],"fPSuC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
@@ -33653,11 +33597,400 @@ Observer.getById = function(id) {
 };
 _getGSAP() && gsap.registerPlugin(Observer);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ciZ9Z":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$fd75 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6nGNa":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$35c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fd75.prelude(module);
+$parcel$ReactRefreshHelpers$35c3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const HomepageBody = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "center",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "center-part1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: [
+                            "Your perfect site to visit during ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "orange",
+                                children: "ele"
+                            }, void 0, false, {
+                                fileName: "components/Homepage/HomepageBody.js",
+                                lineNumber: 6,
+                                columnNumber: 51
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "blue",
+                                children: "cti"
+                            }, void 0, false, {
+                                fileName: "components/Homepage/HomepageBody.js",
+                                lineNumber: 6,
+                                columnNumber: 86
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "green",
+                                children: "ons"
+                            }, void 0, false, {
+                                fileName: "components/Homepage/HomepageBody.js",
+                                lineNumber: 6,
+                                columnNumber: 119
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Homepage/HomepageBody.js",
+                        lineNumber: 6,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Welcome to VoteUp, your digital platform for democratic engagement. At VoteUp, we empower voters above 18 years to voice their opinions on elections. You can share their perspectives on political parties you've voted for, contributing to real-time exit polls. Join us in shaping the future of democracy through informed and inclusive voting insights."
+                    }, void 0, false, {
+                        fileName: "components/Homepage/HomepageBody.js",
+                        lineNumber: 7,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "Register",
+                        children: "REGISTER FOR EXIT POLL"
+                    }, void 0, false, {
+                        fileName: "components/Homepage/HomepageBody.js",
+                        lineNumber: 8,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/Homepage/HomepageBody.js",
+                lineNumber: 5,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "center-part2",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "i",
+                    src: "https://i.pinimg.com/564x/37/33/98/3733985f86e1cbd0381f8b61b5c92cf9.jpg"
+                }, void 0, false, {
+                    fileName: "components/Homepage/HomepageBody.js",
+                    lineNumber: 11,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/Homepage/HomepageBody.js",
+                lineNumber: 10,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Homepage/HomepageBody.js",
+        lineNumber: 4,
+        columnNumber: 9
+    }, undefined);
+};
+_c = HomepageBody;
+exports.default = HomepageBody;
+var _c;
+$RefreshReg$(_c, "HomepageBody");
+
+  $parcel$ReactRefreshHelpers$35c3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"9ftGw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6107 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6107.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NavbarAnimate", ()=>NavbarAnimate);
+var _gsap = require("gsap");
+var _gsapDefault = parcelHelpers.interopDefault(_gsap);
+var _scrollTrigger = require("gsap/ScrollTrigger");
+var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
+var _react = require("react");
+var _s = $RefreshSig$();
+(0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
+function NavbarAnimate() {
+    _s();
+    (0, _react.useEffect)(()=>{
+        const tl = (0, _gsapDefault.default).timeline();
+        tl.from("nav h1", {
+            y: -40,
+            opacity: 0,
+            delay: 0.2,
+            duration: 0.3
+        });
+        tl.from("nav h4, nav button", {
+            y: -40,
+            opacity: 0,
+            delay: 0.5,
+            duration: 0.4,
+            stagger: 0.1
+        });
+        tl.from("#center-part1 h1", {
+            x: -200,
+            opacity: 0,
+            duration: 0.6
+        });
+        tl.from("#center-part1 p", {
+            x: -100,
+            opacity: 0,
+            duration: 0.5
+        });
+        tl.from("#center-part1 button", {
+            opacity: 0,
+            duration: 0.4
+        });
+        tl.from("#center-part2 img", {
+            opacity: 0,
+            duration: 0.5,
+            x: 200
+        });
+    }, []);
+}
+_s(NavbarAnimate, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c = NavbarAnimate;
+var _c;
+$RefreshReg$(_c, "NavbarAnimate");
+
+  $parcel$ReactRefreshHelpers$6107.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8MOTR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$30b3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$30b3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _headerJs = require("./Header.js");
+var _headerJsDefault = parcelHelpers.interopDefault(_headerJs);
+var _navbarAnimate = require("../utils/NavbarAnimate");
+const ElectionNews = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            (0, _navbarAnimate.NavbarAnimate)(),
+            ";",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
+                fileName: "components/News/ElectionNews.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c = ElectionNews;
+exports.default = ElectionNews;
+var _c;
+$RefreshReg$(_c, "ElectionNews");
+
+  $parcel$ReactRefreshHelpers$30b3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./Header.js":"jpevp","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jpevp":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d5c9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d5c9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _headerCss = require("./Header.css");
+const Headernews = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "heading",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Latest News"
+            }, void 0, false, {
+                fileName: "components/News/Header.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "",
+                children: "See all"
+            }, void 0, false, {
+                fileName: "components/News/Header.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/News/Header.js",
+        lineNumber: 5,
+        columnNumber: 13
+    }, undefined);
+};
+_c = Headernews;
+exports.default = Headernews;
+var _c;
+$RefreshReg$(_c, "Headernews");
+
+  $parcel$ReactRefreshHelpers$d5c9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./Header.css":"elHHS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"elHHS":[function() {},{}],"ftSG3":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5b29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5b29.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -33665,156 +33998,121 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-const NavBar = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+var _navbarAnimate = require("../utils/NavbarAnimate");
+const Rules = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex items-center justify-center gap-12",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: "https://i.pinimg.com/564x/cf/08/06/cf0806ddc86a53db9557eccaf28f5951.jpg",
-                            alt: "Logo",
-                            className: "logo"
-                        }, void 0, false, {
-                            fileName: "components/Homepage/NavBar.js",
-                            lineNumber: 7,
-                            columnNumber: 18
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Homepage/NavBar.js",
-                        lineNumber: 7,
-                        columnNumber: 5
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "voteup-text",
-                            children: "VoteUp"
-                        }, void 0, false, {
-                            fileName: "components/Homepage/NavBar.js",
-                            lineNumber: 8,
-                            columnNumber: 18
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Homepage/NavBar.js",
-                        lineNumber: 8,
-                        columnNumber: 5
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/Homepage/NavBar.js",
-                lineNumber: 6,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                id: "part2",
-                className: "flex items-center justify-center gap-12",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/about",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "nav-button about-us font-bold text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                children: "About Us"
-                            }, void 0, false, {
-                                fileName: "components/Homepage/NavBar.js",
-                                lineNumber: 11,
-                                columnNumber: 81
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "components/Homepage/NavBar.js",
-                            lineNumber: 11,
-                            columnNumber: 23
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Homepage/NavBar.js",
-                        lineNumber: 11,
-                        columnNumber: 5
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/news",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "nav-button services font-bold text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                children: "ELECTION NEWS"
-                            }, void 0, false, {
-                                fileName: "components/Homepage/NavBar.js",
-                                lineNumber: 12,
-                                columnNumber: 80
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "components/Homepage/NavBar.js",
-                            lineNumber: 12,
-                            columnNumber: 22
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Homepage/NavBar.js",
-                        lineNumber: 12,
-                        columnNumber: 5
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/rules",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "nav-button contact-us font-bold text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                children: "RULES & REGULATIONS"
-                            }, void 0, false, {
-                                fileName: "components/Homepage/NavBar.js",
-                                lineNumber: 13,
-                                columnNumber: 83
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "components/Homepage/NavBar.js",
-                            lineNumber: 13,
-                            columnNumber: 23
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Homepage/NavBar.js",
-                        lineNumber: 13,
-                        columnNumber: 5
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/signup",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "login-button border-2 border-blue-900 text-lg font-bold",
-                            children: "Sign Up"
-                        }, void 0, false, {
-                            fileName: "components/Homepage/NavBar.js",
-                            lineNumber: 14,
-                            columnNumber: 24
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Homepage/NavBar.js",
-                        lineNumber: 14,
-                        columnNumber: 5
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/Homepage/NavBar.js",
-                lineNumber: 10,
-                columnNumber: 5
+            (0, _navbarAnimate.NavbarAnimate)(),
+            ";",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "Rules"
+            }, void 0, false, {
+                fileName: "components/Rules/Rules.js",
+                lineNumber: 7,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/Homepage/NavBar.js",
+        fileName: "components/Rules/Rules.js",
         lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
-_c = NavBar;
-exports.default = NavBar;
+_c = Rules;
+exports.default = Rules;
 var _c;
-$RefreshReg$(_c, "NavBar");
+$RefreshReg$(_c, "Rules");
 
-  $parcel$ReactRefreshHelpers$fd75.postlude(module);
+  $parcel$ReactRefreshHelpers$5b29.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jQYiB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a183 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a183.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbarAnimate = require("../utils/NavbarAnimate");
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            (0, _navbarAnimate.NavbarAnimate)(),
+            ";",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "About page"
+            }, void 0, false, {
+                fileName: "components/About/About.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/About/About.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = About;
+exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$a183.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2NFbP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$80ba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$80ba.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbarAnimate = require("../utils/NavbarAnimate");
+const Error = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            (0, _navbarAnimate.NavbarAnimate)(),
+            ";",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Ooops Error 404"
+            }, void 0, false, {
+                fileName: "components/Error/Error.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Error/Error.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Error;
+exports.default = Error;
+var _c;
+$RefreshReg$(_c, "Error");
+
+  $parcel$ReactRefreshHelpers$80ba.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.23.1
  *
@@ -40507,252 +40805,218 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"6nGNa":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$35c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7g3a6":[function() {},{}],"22iFL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0df8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$35c3.prelude(module);
+$parcel$ReactRefreshHelpers$0df8.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const HomepageBody = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "center",
+var _reactRouterDom = require("react-router-dom");
+var _navBar = require("../utils/NavBar");
+var _navBarDefault = parcelHelpers.interopDefault(_navBar);
+var _footer = require("../utils/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+const Container = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                id: "center-part1",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: [
-                            "Your perfect site to visit during ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "orange",
-                                children: "ele"
-                            }, void 0, false, {
-                                fileName: "components/Homepage/HomepageBody.js",
-                                lineNumber: 6,
-                                columnNumber: 51
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "blue",
-                                children: "cti"
-                            }, void 0, false, {
-                                fileName: "components/Homepage/HomepageBody.js",
-                                lineNumber: 6,
-                                columnNumber: 86
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "green",
-                                children: "ons"
-                            }, void 0, false, {
-                                fileName: "components/Homepage/HomepageBody.js",
-                                lineNumber: 6,
-                                columnNumber: 119
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/Homepage/HomepageBody.js",
-                        lineNumber: 6,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Welcome to VoteUp, your digital platform for democratic engagement. At VoteUp, we empower voters above 18 years to voice their opinions on elections. You can share their perspectives on political parties you've voted for, contributing to real-time exit polls. Join us in shaping the future of democracy through informed and inclusive voting insights."
-                    }, void 0, false, {
-                        fileName: "components/Homepage/HomepageBody.js",
-                        lineNumber: 7,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "Register",
-                        children: "REGISTER FOR EXIT POLL"
-                    }, void 0, false, {
-                        fileName: "components/Homepage/HomepageBody.js",
-                        lineNumber: 8,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/Homepage/HomepageBody.js",
-                lineNumber: 5,
-                columnNumber: 9
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
+                fileName: "components/Container/Container.js",
+                lineNumber: 9,
+                columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                id: "center-part2",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "i",
-                    src: "https://i.pinimg.com/564x/37/33/98/3733985f86e1cbd0381f8b61b5c92cf9.jpg"
-                }, void 0, false, {
-                    fileName: "components/Homepage/HomepageBody.js",
-                    lineNumber: 11,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/Homepage/HomepageBody.js",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                fileName: "components/Container/Container.js",
                 lineNumber: 10,
-                columnNumber: 9
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "components/Container/Container.js",
+                lineNumber: 11,
+                columnNumber: 13
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "components/Homepage/HomepageBody.js",
-        lineNumber: 4,
-        columnNumber: 9
-    }, undefined);
+    }, void 0, true);
 };
-_c = HomepageBody;
-exports.default = HomepageBody;
+_c = Container;
+exports.default = Container;
 var _c;
-$RefreshReg$(_c, "HomepageBody");
+$RefreshReg$(_c, "Container");
 
-  $parcel$ReactRefreshHelpers$35c3.postlude(module);
+  $parcel$ReactRefreshHelpers$0df8.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fpMMC":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e5bf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../utils/NavBar":"iVWWy","../utils/Footer":"kUOa9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iVWWy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f581 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e5bf.prelude(module);
+$parcel$ReactRefreshHelpers$f581.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+const NavBar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex items-center justify-center gap-12",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: "https://i.pinimg.com/564x/cf/08/06/cf0806ddc86a53db9557eccaf28f5951.jpg",
+                            alt: "Logo",
+                            className: "logo"
+                        }, void 0, false, {
+                            fileName: "components/utils/NavBar.js",
+                            lineNumber: 7,
+                            columnNumber: 18
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/utils/NavBar.js",
+                        lineNumber: 7,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "voteup-text",
+                            children: "VoteUp"
+                        }, void 0, false, {
+                            fileName: "components/utils/NavBar.js",
+                            lineNumber: 8,
+                            columnNumber: 18
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/utils/NavBar.js",
+                        lineNumber: 8,
+                        columnNumber: 5
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/utils/NavBar.js",
+                lineNumber: 6,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "part2",
+                className: "flex items-center justify-center gap-12",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/about",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "nav-button about-us font-bold text-lg",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "About Us"
+                            }, void 0, false, {
+                                fileName: "components/utils/NavBar.js",
+                                lineNumber: 11,
+                                columnNumber: 81
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/utils/NavBar.js",
+                            lineNumber: 11,
+                            columnNumber: 23
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/utils/NavBar.js",
+                        lineNumber: 11,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/electionnews",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "nav-button services font-bold text-lg",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "ELECTION NEWS"
+                            }, void 0, false, {
+                                fileName: "components/utils/NavBar.js",
+                                lineNumber: 12,
+                                columnNumber: 88
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/utils/NavBar.js",
+                            lineNumber: 12,
+                            columnNumber: 30
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/utils/NavBar.js",
+                        lineNumber: 12,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/rules",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "nav-button contact-us font-bold text-lg",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: "RULES & REGULATIONS"
+                            }, void 0, false, {
+                                fileName: "components/utils/NavBar.js",
+                                lineNumber: 13,
+                                columnNumber: 83
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/utils/NavBar.js",
+                            lineNumber: 13,
+                            columnNumber: 23
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/utils/NavBar.js",
+                        lineNumber: 13,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/signup",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "login-button border-2 border-blue-900 text-lg font-bold",
+                            children: "Sign Up"
+                        }, void 0, false, {
+                            fileName: "components/utils/NavBar.js",
+                            lineNumber: 14,
+                            columnNumber: 24
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/utils/NavBar.js",
+                        lineNumber: 14,
+                        columnNumber: 5
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/utils/NavBar.js",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/utils/NavBar.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = NavBar;
+exports.default = NavBar;
+var _c;
+$RefreshReg$(_c, "NavBar");
+
+  $parcel$ReactRefreshHelpers$f581.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kUOa9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$871e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$871e.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -40761,256 +41025,79 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
             className: "footer",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "\xa9 2024 VoteUp. All rights reserved."
             }, void 0, false, {
-                fileName: "components/Homepage/Footer.js",
-                lineNumber: 7,
+                fileName: "components/utils/Footer.js",
+                lineNumber: 6,
                 columnNumber: 5
             }, undefined)
         }, void 0, false, {
-            fileName: "components/Homepage/Footer.js",
-            lineNumber: 6,
+            fileName: "components/utils/Footer.js",
+            lineNumber: 5,
             columnNumber: 5
         }, undefined)
-    }, void 0, false);
+    }, void 0, false, {
+        fileName: "components/utils/Footer.js",
+        lineNumber: 4,
+        columnNumber: 5
+    }, undefined);
 };
 _c = Footer;
 exports.default = Footer;
 var _c;
 $RefreshReg$(_c, "Footer");
 
-  $parcel$ReactRefreshHelpers$e5bf.postlude(module);
+  $parcel$ReactRefreshHelpers$871e.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8MOTR":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$30b3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"71Zkc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8f71 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$30b3.prelude(module);
+$parcel$ReactRefreshHelpers$8f71.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _navBar = require("../Homepage/NavBar");
-var _navBarDefault = parcelHelpers.interopDefault(_navBar);
-var _footer = require("../Homepage/Footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _header = require("./Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-const ElectionNews = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
-                fileName: "components/News/ElectionNews.js",
-                lineNumber: 8,
-                columnNumber: 6
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "components/News/ElectionNews.js",
-                lineNumber: 9,
-                columnNumber: 6
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "components/News/ElectionNews.js",
-                lineNumber: 10,
-                columnNumber: 6
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_c = ElectionNews;
-exports.default = ElectionNews;
-var _c;
-$RefreshReg$(_c, "ElectionNews");
-
-  $parcel$ReactRefreshHelpers$30b3.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../Homepage/NavBar":"ciZ9Z","../Homepage/Footer":"fpMMC","./Header":"jpevp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jpevp":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d5c9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d5c9.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _headerCss = require("./Header.css");
-const Header = ()=>{
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _navbarAnimate = require("../utils/NavbarAnimate");
+const Signup = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "heading",
         children: [
+            (0, _navbarAnimate.NavbarAnimate)(),
+            ";",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Latest News"
+                children: "Signup page"
             }, void 0, false, {
-                fileName: "components/News/Header.js",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "",
-                children: "See all"
-            }, void 0, false, {
-                fileName: "components/News/Header.js",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "components/News/Header.js",
-        lineNumber: 5,
-        columnNumber: 13
-    }, undefined);
-};
-_c = Header;
-exports.default = Header;
-var _c;
-$RefreshReg$(_c, "Header");
-
-  $parcel$ReactRefreshHelpers$d5c9.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./Header.css":"elHHS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"elHHS":[function() {},{}],"ftSG3":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5b29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5b29.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _navBar = require("../Homepage/NavBar");
-var _navBarDefault = parcelHelpers.interopDefault(_navBar);
-const Rules = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
-                fileName: "components/Rules/Rules.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Rules"
-            }, void 0, false, {
-                fileName: "components/Rules/Rules.js",
-                lineNumber: 8,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "components/Rules/Rules.js",
-        lineNumber: 6,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Rules;
-exports.default = Rules;
-var _c;
-$RefreshReg$(_c, "Rules");
-
-  $parcel$ReactRefreshHelpers$5b29.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Homepage/NavBar":"ciZ9Z"}],"jQYiB":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a183 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a183.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _navBar = require("../Homepage/NavBar");
-var _navBarDefault = parcelHelpers.interopDefault(_navBar);
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
-                fileName: "components/About/About.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "About page"
-            }, void 0, false, {
-                fileName: "components/About/About.js",
+                fileName: "components/Signup/Signup.js",
                 lineNumber: 7,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/About/About.js",
+        fileName: "components/Signup/Signup.js",
         lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
-_c = About;
-exports.default = About;
+_c = Signup;
+exports.default = Signup;
 var _c;
-$RefreshReg$(_c, "About");
+$RefreshReg$(_c, "Signup");
 
-  $parcel$ReactRefreshHelpers$a183.postlude(module);
+  $parcel$ReactRefreshHelpers$8f71.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Homepage/NavBar":"ciZ9Z"}],"2NFbP":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$80ba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$80ba.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _navBar = require("../Homepage/NavBar");
-var _navBarDefault = parcelHelpers.interopDefault(_navBar);
-const Error = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarDefault.default), {}, void 0, false, {
-            fileName: "components/Error/Error.js",
-            lineNumber: 6,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "components/Error/Error.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Error;
-exports.default = Error;
-var _c;
-$RefreshReg$(_c, "Error");
-
-  $parcel$ReactRefreshHelpers$80ba.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Homepage/NavBar":"ciZ9Z"}],"7g3a6":[function() {},{}]},["9MYew","1xC6H","aSihg"], "aSihg", "parcelRequire2092")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9MYew","1xC6H","aSihg"], "aSihg", "parcelRequire2092")
 
 //# sourceMappingURL=index.f54bfa54.js.map

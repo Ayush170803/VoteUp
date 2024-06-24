@@ -1,14 +1,12 @@
-import NavBar from "../Homepage/NavBar";
-import Footer from "../Homepage/Footer";
-import Header from "./Header";
+import Headernews from "./Header.js";
+import { NavbarAnimate } from "../utils/NavbarAnimate";
 const ElectionNews = ()=>
-{
-    return(
-    <>
-     <NavBar/>
-     <Header/>
-     <Footer/>
-     </>
+    {
+        return(
+            <>
+            {NavbarAnimate()};
+            <Headernews/>
+            </>
     )
 }
 

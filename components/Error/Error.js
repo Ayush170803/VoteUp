@@ -1,11 +1,12 @@
 import React from 'react'
-import NavBar from '../Homepage/NavBar'
+import { NavbarAnimate } from '../utils/NavbarAnimate';
 const Error = () => {
   return (
     <div>
-      <NavBar></NavBar>
+      {NavbarAnimate()};
+      <h1>Ooops Error 404</h1>
     </div>
   )
 }
 
-export default Error
+export default Error;

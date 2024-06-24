@@ -1,9 +1,9 @@
 import React from 'react'
-import NavBar from '../Homepage/NavBar';
+import { NavbarAnimate } from '../utils/NavbarAnimate';
 const About = () => {
   return (
     <div>
-      <NavBar/>
+        {NavbarAnimate()};
       <p>About page</p>
     </div>
   )

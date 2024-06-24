@@ -1,10 +1,9 @@
 import React from 'react'
-import NavBar from '../Homepage/NavBar';
-
+import { NavbarAnimate } from "../utils/NavbarAnimate";
 const Rules = () => {
   return (
     <div>
-      <NavBar/>
+         {NavbarAnimate()};
       <p>Rules</p>
     </div>
   )

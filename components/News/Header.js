@@ -1,5 +1,5 @@
 import './Header.css';
-const Header = () =>
+const Headernews = () =>
     {
         return(
             <div id="heading">
@@ -9,4 +9,4 @@ const Header = () =>
         );
     }
 
-    export default Header;
+export default Headernews;
