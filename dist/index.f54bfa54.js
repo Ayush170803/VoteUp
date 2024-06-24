@@ -2955,8 +2955,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactDom = require("react-dom");
-var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+var _client = require("react-dom/client");
+var _clientDefault = parcelHelpers.interopDefault(_client);
 var _homepage = require("./components/Homepage/Homepage");
 var _homepageDefault = parcelHelpers.interopDefault(_homepage);
 var _electionNews = require("./components/News/ElectionNews");
@@ -2973,7 +2973,7 @@ var _container = require("./components/Container/Container");
 var _containerDefault = parcelHelpers.interopDefault(_container);
 var _signup = require("./components/Signup/Signup");
 var _signupDefault = parcelHelpers.interopDefault(_signup);
-let root = (0, _reactDomDefault.default).createRoot(document.querySelector("#root"));
+let root = (0, _clientDefault.default).createRoot(document.querySelector("#root"));
 const ContainerRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
@@ -3044,7 +3044,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Homepage/Homepage":"cmUkF","./components/News/ElectionNews":"8MOTR","./components/Rules/Rules":"ftSG3","./components/About/About":"jQYiB","./components/Error/Error":"2NFbP","react-router-dom":"9xmpe","./App.css":"7g3a6","./components/Container/Container":"22iFL","./components/Signup/Signup":"71Zkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Homepage/Homepage":"cmUkF","./components/News/ElectionNews":"8MOTR","./components/Rules/Rules":"ftSG3","./components/About/About":"jQYiB","./components/Error/Error":"2NFbP","react-router-dom":"9xmpe","./App.css":"7g3a6","./components/Container/Container":"22iFL","./components/Signup/Signup":"71Zkc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -5763,7 +5763,28 @@ module.exports = require("a569817e6ea559f6");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"j6uA9":[function(require,module,exports) {
+},{}],"lOjBx":[function(require,module,exports) {
+"use strict";
+var m = require("aaccff5d309d9239");
+var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+exports.createRoot = function(c, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.createRoot(c, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
+};
+exports.hydrateRoot = function(c, h, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.hydrateRoot(c, h, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
+};
+
+},{"aaccff5d309d9239":"j6uA9"}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -27286,26 +27307,28 @@ var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
 var _homepageBody = require("./HomepageBody");
 var _homepageBodyDefault = parcelHelpers.interopDefault(_homepageBody);
 var _navbarAnimate = require("../utils/NavbarAnimate");
+var _homepageanimate = require("../utils/homepageanimate");
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 function App() {
     (0, _navbarAnimate.NavbarAnimate)();
+    (0, _homepageanimate.homepageanimate)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "App",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "main",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageBodyDefault.default), {}, void 0, false, {
                 fileName: "components/Homepage/Homepage.jsx",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "components/Homepage/Homepage.jsx",
-            lineNumber: 13,
+            lineNumber: 15,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "components/Homepage/Homepage.jsx",
-        lineNumber: 12,
+        lineNumber: 14,
         columnNumber: 9
     }, this);
 }
@@ -27319,7 +27342,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Homepage.css":"5DnuC","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","./HomepageBody":"6nGNa","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5DnuC":[function() {},{}],"fPSuC":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Homepage.css":"5DnuC","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","./HomepageBody":"6nGNa","../utils/NavbarAnimate":"9ftGw","../utils/homepageanimate":"i21eY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5DnuC":[function() {},{}],"fPSuC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
@@ -33872,6 +33895,39 @@ function NavbarAnimate() {
             duration: 0.4,
             stagger: 0.1
         });
+    }, []);
+}
+_s(NavbarAnimate, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c = NavbarAnimate;
+var _c;
+$RefreshReg$(_c, "NavbarAnimate");
+
+  $parcel$ReactRefreshHelpers$6107.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i21eY":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7a26 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7a26.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "homepageanimate", ()=>homepageanimate);
+var _gsap = require("gsap");
+var _gsapDefault = parcelHelpers.interopDefault(_gsap);
+var _scrollTrigger = require("gsap/ScrollTrigger");
+var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
+var _react = require("react");
+var _s = $RefreshSig$();
+(0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
+function homepageanimate() {
+    _s();
+    (0, _react.useEffect)(()=>{
+        const tl = (0, _gsapDefault.default).timeline();
         tl.from("#center-part1 h1", {
             x: -200,
             opacity: 0,
@@ -33893,12 +33949,9 @@ function NavbarAnimate() {
         });
     }, []);
 }
-_s(NavbarAnimate, "OD7bBpZva5O2jO+Puf00hKivP7c=");
-_c = NavbarAnimate;
-var _c;
-$RefreshReg$(_c, "NavbarAnimate");
+_s(homepageanimate, "OD7bBpZva5O2jO+Puf00hKivP7c=");
 
-  $parcel$ReactRefreshHelpers$6107.postlude(module);
+  $parcel$ReactRefreshHelpers$7a26.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -33913,17 +33966,24 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _headerJs = require("./Header.js");
-var _headerJsDefault = parcelHelpers.interopDefault(_headerJs);
 var _navbarAnimate = require("../utils/NavbarAnimate");
+var _newsfetch = require("./Newsfetch");
+var _newsfetchDefault = parcelHelpers.interopDefault(_newsfetch);
+var _header = require("./Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
 const ElectionNews = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             (0, _navbarAnimate.NavbarAnimate)(),
             ";",
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "components/News/ElectionNews.js",
-                lineNumber: 8,
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsfetchDefault.default), {}, void 0, false, {
+                fileName: "components/News/ElectionNews.js",
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined)
         ]
@@ -33939,7 +33999,132 @@ $RefreshReg$(_c, "ElectionNews");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Header.js":"jpevp","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jpevp":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/NavbarAnimate":"9ftGw","./Newsfetch":"215ZQ","./Header":"jpevp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"215ZQ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7c3a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7c3a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _newsadd = require("./Newsadd");
+var _newsaddDefault = parcelHelpers.interopDefault(_newsadd);
+var _s = $RefreshSig$();
+const Newsfetch = ()=>{
+    _s();
+    const [news, setnews] = (0, _react.useState)([]);
+    async function getdata() {
+        const response = await fetch("https://newsapi.org/v2/everything?q=India%20election&language=en&apiKey=049d891ec7c14527b64b63b6af02f94a");
+        const output = await response.json();
+        console.log(output);
+        setnews(output?.articles);
+    }
+    (0, _react.useEffect)(()=>{
+        getdata();
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "newsitems",
+        children: news.map(function(value) {
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsaddDefault.default), {
+                ...value
+            }, void 0, false, {
+                fileName: "components/News/Newsfetch.js",
+                lineNumber: 25,
+                columnNumber: 12
+            }, this);
+        })
+    }, void 0, false, {
+        fileName: "components/News/Newsfetch.js",
+        lineNumber: 21,
+        columnNumber: 3
+    }, undefined);
+};
+_s(Newsfetch, "Q+A3Qi5C/B9j+rVWvxR1aL4Cflo=");
+_c = Newsfetch;
+exports.default = Newsfetch;
+var _c;
+$RefreshReg$(_c, "Newsfetch");
+
+  $parcel$ReactRefreshHelpers$7c3a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Newsadd":"l0EWf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l0EWf":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$44e0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$44e0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _headerCss = require("./Header.css");
+const Newsadd = ({ title, description, urlToImage, source, url })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "cards",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: urlToImage
+            }, void 0, false, {
+                fileName: "components/News/Newsadd.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: source.name
+            }, void 0, false, {
+                fileName: "components/News/Newsadd.js",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: title
+            }, void 0, false, {
+                fileName: "components/News/Newsadd.js",
+                lineNumber: 9,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                children: description
+            }, void 0, false, {
+                fileName: "components/News/Newsadd.js",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: url,
+                children: "Read more >"
+            }, void 0, false, {
+                fileName: "components/News/Newsadd.js",
+                lineNumber: 11,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/News/Newsadd.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Newsadd;
+exports.default = Newsadd;
+var _c;
+$RefreshReg$(_c, "Newsadd");
+
+  $parcel$ReactRefreshHelpers$44e0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Header.css":"elHHS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"elHHS":[function() {},{}],"jpevp":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d5c9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33961,9 +34146,8 @@ const Headernews = ()=>{
                 lineNumber: 6,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "",
-                children: "See all"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "corner"
             }, void 0, false, {
                 fileName: "components/News/Header.js",
                 lineNumber: 7,
@@ -40888,13 +41072,16 @@ const NavBar = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/",
+                        style: {
+                            textDecoration: "none"
+                        },
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             className: "voteup-text",
                             children: "VoteUp"
                         }, void 0, false, {
                             fileName: "components/utils/NavBar.js",
                             lineNumber: 8,
-                            columnNumber: 18
+                            columnNumber: 52
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/utils/NavBar.js",

@@ -5,7 +5,7 @@ const NavBar = () => {
     <nav>
     <div className="flex items-center justify-center gap-12">
     <Link to="/"><img src="https://i.pinimg.com/564x/cf/08/06/cf0806ddc86a53db9557eccaf28f5951.jpg" alt="Logo" className="logo"/></Link>
-    <Link to="/"><h1 className="voteup-text">VoteUp</h1></Link>
+    <Link to="/" style={{ textDecoration: 'none'}}><h1 className="voteup-text">VoteUp</h1></Link>
     </div>
     <div id="part2" className="flex items-center justify-center gap-12">
     <Link to="/about"><button className="nav-button about-us font-bold text-lg"><h4>About Us</h4></button></Link>

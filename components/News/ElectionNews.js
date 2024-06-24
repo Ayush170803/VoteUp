@@ -1,11 +1,14 @@
-import Headernews from "./Header.js";
+
 import { NavbarAnimate } from "../utils/NavbarAnimate";
+import Newsfetch from "./Newsfetch";
+import Headernews from "./Header";
 const ElectionNews = ()=>
     {
         return(
             <>
             {NavbarAnimate()};
             <Headernews/>
+            <Newsfetch/>
             </>
     )
 }

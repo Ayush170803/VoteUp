@@ -1,15 +1,63 @@
 
 #heading
 {
-    background-color:darkgrey;
     display:flex;
     justify-content:space-between;
     align-items: center;
-    margin:10px;
     padding: 10px;
 }
-#heading a
+#heading>h1
 {
+    margin-left:90px;
+    font-family: monument;
+}
+#corner a
+{
+    font-weight: 500;
+    font-size: 15px;
     text-decoration: none;
     color:red;
+}
+#cards
+{
+    height:450px;
+    width:350px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+#cards img
+{
+    border-radius: 10px;
+    height:50%;
+    width:100%;
+}
+#cards:hover
+{
+    transform: scale(0.9);
+}
+#newsitems
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#cards a
+{
+text-decoration: none;
+text-align: center;
+color:midnightblue;
+}
+
+#cards h2
+{
+    text-decoration: none;
+    font-family: monument;
+}
+#cards h5
+{
+    color:grey;
+    font-weight: 500;
 }
