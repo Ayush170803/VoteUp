@@ -1,19 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom"; // Assuming you use this for ContainerRouter
-import { Routes, Route } from "react-router"; // Correct import for Routes and Route
+import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
+import { Routes, Route } from "react-router";
 import HomePage from './components/Homepage/Homepage';
 import ElectionNews from "./components/News/ElectionNews";
 import Rules from "./components/Rules/Rules";
 import About from "./components/About/About";
 import Error from "./components/Error/Error";
 import Container from "./components/Container/Container";
-import SignupForm from "./components/Signup/Signup"; // Make sure SignupForm is correctly imported
+import SignupForm from "./components/Signup/Signup";
 import LoginForm from './components/Signup/LoginForm';
 import ForgotPasswordForm from './components/Signup/ForgotPasswordForm';
 import ResetPassword from './components/Signup/ResetPassword';
+import Form from './components/Form/form'; 
 import BackgroundVideo from './components/Signup/BackgroundVideo';
 import ErrorBoundary from './components/Signup/ErrorBoundary';
+
 import './App.css';
 
 // Assuming ContainerRouter is correctly defined using react-router-dom
@@ -28,6 +30,9 @@ const ContainerRouter = createBrowserRouter([
       { path: '/electionnews', element: <ElectionNews /> },
       { path: '/rules', element: <Rules /> },
       { path: '/signup', element: <SignupForm /> },
+      { path: '/login', element: <LoginForm /> },
+      { path: '/form', element: <Form /> },
+      { path: '/reset-password', element: <ResetPassword /> },
       // More nested routes here
     ],
   },
@@ -63,6 +68,7 @@ const App = () => {
           <Route path="/login" element={<LoginForm />} />
           <Route path="/forgot-password" element={<ForgotPasswordForm />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/form" element={<Form />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>
