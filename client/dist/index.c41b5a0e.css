@@ -336,8 +336,10 @@ nav {
   --text-color: #000;
   --container-bg-color: #f0f0f0cc;
   --input-bg-color: #ffffff80;
-  --button-bg-color: #ddd;
-  --link-color: #007bff;
+  --button-bg-color: #3fcbf1;
+  --button-hover-color: #0272bd;
+  --link-color: #388e3c;
+  --divider-color: #ccc;
 }
 
 body.dark-mode {
@@ -345,28 +347,23 @@ body.dark-mode {
   --text-color: #fff;
   --container-bg-color: #000c;
   --input-bg-color: #fff3;
-  --button-bg-color: #333;
-  --link-color: #1e90ff;
+  --button-bg-color: #ff5722;
+  --button-hover-color: #ff7043;
+  --link-color: #4caf50;
+  --divider-color: #555;
 }
 
 .form-wrapper {
+  background-color: var(--bg-color);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  padding-top: 4px;
+  padding-bottom: 30px;
   display: flex;
   position: relative;
-}
-
-.background-video {
-  object-fit: cover;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .form-container {
@@ -397,6 +394,7 @@ body.dark-mode {
 }
 
 h2 {
+  color: var(--text-color);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -430,7 +428,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--link-color);
+  background-color: var(--button-hover-color);
 }
 
 .dark-mode-toggle {
@@ -449,6 +447,32 @@ button:hover {
 body.dark-mode .dark-mode-toggle {
   color: #f5f5f5;
   background: #333;
+}
+
+.divider {
+  border-top: 1px solid var(--divider-color);
+  margin: 20px 0;
+}
+
+.error {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: .9em;
+}
+
+.login-option {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
 }
 
 * {
