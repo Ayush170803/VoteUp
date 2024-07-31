@@ -42058,7 +42058,7 @@ const Signup = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(Signup, "EZq5uJQsVE3mBqzBImFcJ1t1aiA=");
+_s(Signup, "3Qlkjn//uOujUbh45ytp108VOzU=");
 _c = Signup;
 exports.default = Signup;
 var _c;
@@ -47109,26 +47109,142 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _navbarAnimate = require("../utils/NavbarAnimate");
+var _reactDom = require("react-dom");
+var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+var _formCss = require("./form.css");
+var _s = $RefreshSig$();
 const Form = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    _s();
+    const [formdata, setFormdata] = (0, _react.useState)({
+        name: "",
+        state: "",
+        party: "",
+        description: ""
+    });
+    const parties = [
+        "Bharatiya Janata Party (BJP)",
+        "Indian National Congress (INC)",
+        "Communist Party of India (CPI)",
+        "Communist Party of India (Marxist) [CPI(M)]",
+        "Aam Aadmi Party (AAP)",
+        "Nationalist Congress Party (NCP)",
+        "Bahujan Samaj Party (BSP)",
+        "Samajwadi Party (SP)",
+        "Dravida Munnetra Kazhagam (DMK)",
+        "All India Anna Dravida Munnetra Kazhagam (AIADMK)",
+        "Telangana Rashtra Samithi (TRS)",
+        "Yuvajana Sramika Rythu Congress Party (YSRCP)",
+        "Rashtriya Janata Dal (RJD)",
+        "Janata Dal (United) [JD(U)]",
+        "Shiromani Akali Dal (SAD)",
+        "Jammu and Kashmir Peoples Democratic Party (PDP)",
+        "Lok Jan Shakti Party (LJP)",
+        "Naga Peoples Front (NPF)",
+        "Mizoram National Front (MNF)",
+        "Biju Janata Dal (BJD)"
+    ];
+    const handleChange = (e)=>{
+        const { name, value } = e.target;
+        setFormdata((prevdata)=>({
+                ...prevdata,
+                [name]: value
+            }));
+    };
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        try {
+            const response = await fetch("http://localhost:3000/form", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formdata)
+            });
+            const result = await response.json();
+            console.log("Form data submitted successfully:", result);
+        } catch (error) {
+            console.error("Error submitting form data:", error);
+        }
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+        id: "form",
+        onSubmit: handleSubmit,
         children: [
-            (0, _navbarAnimate.NavbarAnimate)(),
-            ";",
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Form"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                placeholder: "Enter Name",
+                onChange: handleChange,
+                value: formdata.name,
+                name: "name"
             }, void 0, false, {
                 fileName: "components/Form/form.jsx",
-                lineNumber: 7,
-                columnNumber: 7
+                lineNumber: 63,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                placeholder: "Enter State",
+                onChange: handleChange,
+                value: formdata.state,
+                name: "state"
+            }, void 0, false, {
+                fileName: "components/Form/form.jsx",
+                lineNumber: 70,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                name: "party",
+                onChange: handleChange,
+                value: formdata.party,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                        value: "",
+                        children: "Select a Party"
+                    }, void 0, false, {
+                        fileName: "components/Form/form.jsx",
+                        lineNumber: 82,
+                        columnNumber: 17
+                    }, undefined),
+                    parties.map((party, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                            value: party,
+                            children: party
+                        }, index, false, {
+                            fileName: "components/Form/form.jsx",
+                            lineNumber: 84,
+                            columnNumber: 21
+                        }, undefined))
+                ]
+            }, void 0, true, {
+                fileName: "components/Form/form.jsx",
+                lineNumber: 77,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                placeholder: "Give Review",
+                onChange: handleChange,
+                value: formdata.description,
+                name: "description"
+            }, void 0, false, {
+                fileName: "components/Form/form.jsx",
+                lineNumber: 87,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                type: "submit",
+                children: "Submit"
+            }, void 0, false, {
+                fileName: "components/Form/form.jsx",
+                lineNumber: 93,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/Form/form.jsx",
-        lineNumber: 5,
-        columnNumber: 5
+        lineNumber: 62,
+        columnNumber: 9
     }, undefined);
 };
+_s(Form, "w9gOFmZ8sVSijt6BvnXkkuYwOxw=");
 _c = Form;
 exports.default = Form;
 var _c;
@@ -47139,7 +47255,7 @@ $RefreshReg$(_c, "Form");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/NavbarAnimate":"9ftGw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8B9CZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-dom":"j6uA9","./form.css":"bWL7O"}],"bWL7O":[function() {},{}],"8B9CZ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$09bf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
